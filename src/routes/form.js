@@ -16,18 +16,20 @@ export default function Form() {
 							<select	class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" required name="type">
 								<option disabled="" value="">Seleziona una tipologia</option>
 								<option value="salute">Salute</option>
+								<option value="elettronica_elettrodomestici">Elettronica/Elettrodomestici</option>
 								<option value="gelaterie">Gelateria</option>
 								<option value="macellerie">Macelleria</option>
 								<option value="panifici">Panifici</option>
 								<option value="generi alimentari">Generi Alimentari</option>
+								<option value="pesce fresco e surgelato">Pesce Fresco/Surgelato</option>
 								<option value="ristorazione">Ristorazione</option>
-								<option value="pesce fresco e surgelato">Pesce Fresco</option>
 								<option value="enoteca e birre">Enoteca e Birre</option>
 								<option value="frutta fresca">Frutta Fresca</option>
 								<option value="supermercati">Supermercati</option>
 								<option value="pasticceria">Pasticceria</option>
 								<option value="pizzerie">Pizzeria</option>
 								<option value="lavanderie">Lavanderia</option>
+								<option value="informatica">Informatica</option>
 								<option value="prodotti e servizi per animali">Prodotti per Animali</option>
 							</select>
 						</label>
