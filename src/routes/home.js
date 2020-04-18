@@ -1,5 +1,5 @@
 import { Component, Fragment } from 'preact';
-
+import { Link } from 'preact-router/match';
 import { ListCategory } from '../components/listCategory';
 
 export default class Home extends Component {
@@ -44,7 +44,10 @@ export default class Home extends Component {
 		const filteredStores = this.filteredCategories(filter, categoryFilter)
 
 		return (
+
 			<Fragment>
+			<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">➕ Aggiungi un'attività</Link>
+			<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/chisiamo">❓ Chi siamo</Link>
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
