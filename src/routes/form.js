@@ -21,7 +21,7 @@ export default function Form() {
 								<option value="macellerie">🥩Macelleria</option>
 								<option value="panifici">🍞Panifici</option>
 								<option value="pub">🍔Pub</option>
-								<option value="librerie">🕮Librerie</option>
+								<option value="librerie">📚Librerie</option>
 								<option value="generi alimentari">🥬Generi Alimentari</option>
 								<option value="pesce fresco e surgelato">🍣Pesce Fresco/Surgelato</option>
 								<option value="elettronica_elettrodomestici">📺Elettronica/Elettrodomestici</option>
