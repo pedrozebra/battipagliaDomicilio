@@ -17,10 +17,11 @@ export default function Form() {
 								<option disabled="" value="">Seleziona una tipologia</option>
 								<option value="salute">👩‍⚕️ Salute</option>
 								<option value="artigianato">🎨Artigianato</option>
-								<option value="gelaterie">🍦Gelateria</option>
+								<option value="gelaterie">☕🍦Bar e Gelaterie</option>
 								<option value="macellerie">🥩Macelleria</option>
 								<option value="panifici">🍞Panifici</option>
 								<option value="pub">🍔Pub</option>
+								<option value="fiori_piante">🌻Fiori e Piante</option>
 								<option value="librerie">📚Librerie</option>
 								<option value="generi alimentari">🥬Generi Alimentari</option>
 								<option value="pesce fresco e surgelato">🍣Pesce Fresco/Surgelato</option>
