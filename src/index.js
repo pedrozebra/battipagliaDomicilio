@@ -21,7 +21,6 @@ export default class App extends Component {
 	state = {
 		results: {},
 		isHomepage: true,
-    isChiSiamo: false,
 		isPopupOpen: false,
 		popupNumbers: [],
 	}
@@ -64,7 +63,7 @@ export default class App extends Component {
 		root.style.setProperty('--popup-visible', isPopupOpen ? 'hidden': 'initial')
 	}
 
-	render(props, { isHomepage, isChiSiamo, results, popupNumbers, isPopupOpen }) {
+	render(props, { isHomepage, results, popupNumbers, isPopupOpen }) {
 		return (
 			<Action.Provider value={{setPopupNumbers: this.setPopupNumbers}}>
 				<div id="app" class="px-5 max-w-screen-md mx-auto">

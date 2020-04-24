@@ -24,11 +24,11 @@ export const ListItem = ({ name, tel, site, mail, note, newEntry }) => {
 					{note && (
 						<span
 							onClick={handleClick}
-							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-yellow-300 rounded-lg"
+							class="inline-block mx-1 md:mx-2 w-8 h-8 cursor-pointer text-center leading-8 bg-blue-300 rounded-lg"
 							role="img"
-							aria-label="warning"
+							aria-label="info"
 						>
-							⚠️
+						ℹ️
 						</span>
 					)}
 					{site && (

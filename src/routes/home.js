@@ -32,7 +32,7 @@ export default class Home extends Component {
 						...acc,
 						[key]: {
 							icon: results[key].icon,
-							data: results[key].data.filter(e => (filter.length ? regex.test(e.name) : true))
+							data: results[key].data.sort(() => (Math.random() - 0.5) ).filter(e => (filter.length ? (regex.test(e.name) || regex.test(e.note)) : true))
 						}
 					}
 				);
