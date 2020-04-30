@@ -10,7 +10,7 @@ export default function ChiSiamo() {
 			</p>
       <p class="mt-5">Per noi la condivisione è alla base di una buona comunità. <br />Dato che siamo molto legati alla NOSTRA comunità abbiamo deciso di condividere con voi questo progetto.</p>
       <p class="mt-5">
-      Se hai bisogno di supporto oppure vuoi modificare le informazioni che riguardano la tua attività contattaci via mail all'indirizzo <a href="mailto:info@battipagliadomicilio.it"><strong>info@battipagliadomicilio.it</strong></a><br />oppure via telefono al numero  <a href="tel:+393317753734"><strong>3317753734</strong></a>
+      Se hai bisogno di supporto oppure vuoi modificare le informazioni che riguardano la tua attività contattaci via mail all'indirizzo <a href="mailto:info@battipagliadomicilio.it"><strong>info@battipagliadomicilio.it</strong></a>
       </p>
 			<span class="text-5xl" aria-label="thanks icons">🙏 Grazie del supporto</span>
 		</div>

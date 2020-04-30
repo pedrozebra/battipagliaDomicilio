@@ -20,6 +20,16 @@ export default class Home extends Component {
       this.setState({ categoryFilter: key });
    };
 
+	 getStoresNumber() {
+	   const { results: stores } = this.props;
+	   const keys = Object.keys(stores);
+	   let storesNumber = 0;
+	   for (const key of keys) {
+	   		storesNumber += stores[key].data.length;
+		  }
+	   return storesNumber;
+   }
+
 	filteredCategories(filter, categoryFilter) {
 		const { results } = this.props;
 		const regex = new RegExp(`${filter}`, 'i');
@@ -39,20 +49,36 @@ export default class Home extends Component {
 			}, {});
 	}
 
+	isEmptySearch(filteredStores) {
+		let storesFound = 0;
+		for (let key in filteredStores) {
+			storesFound += filteredStores[key].data.length;
+		}
+		return storesFound === 0;
+	}
+
 	render(props, { filter, categoryFilter }) {
 		const { results: stores } = props;
 		const filteredStores = this.filteredCategories(filter, categoryFilter)
+		const storesNumber = this.getStoresNumber()
+		const isEmptySearch = this.isEmptySearch(filteredStores);
 
 		return (
 
 			<Fragment>
 			<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/form">➕ Aggiungi un'attività</Link>
 			<Link class="m-5 bg-blue-500 inline-block hover:bg-blue-700 text-white font-bold px-2 py-1 rounded" href="/chisiamo">❓ Chi siamo</Link>
+			{storesNumber>0 && (
+				<div class="text-center mt-2 pb-5">
+					<span>Unisciti</span> alle <span class="font-semibold">{storesNumber}</span> attivit&agrave; che consegnano a domicilio a <span class="capitalize">{process.env.PREACT_APP_CITY}</span>
+				</div>
+				)}
+
 				<div class="relative p-5 lg:max-w-5xl xl:max-w-6xl lg:m-auto pb-10">
 					<input
 						class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
 						type="text"
-						placeholder="Cerca Attività"
+						placeholder="Nome Attività"
 						onInput={this.handleChangeFilter}
 					/>
 				</div>
@@ -83,6 +109,9 @@ export default class Home extends Component {
 							))
 					}
 				</div>
+				{isEmptySearch && (
+					<p class="font-bold mt-5 mb-10 text-center">Oops! 😅 Non ci sono attività corrispondenti alla tua ricerca.</p>
+				)}
 				<div class="text-center w-full">
 					<p class="mb-5">
 						Developed with ❤️ by

@@ -6,7 +6,7 @@ export default function Form() {
 					<input type="hidden" name="form-name" value="contact" />
 				</p>
 				<p class="my-5">
-					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Nome
+					<label class="lock text-gray-800 ml-2 font-bold md:text-right mb-1 md:mb-0 pr-4">Nome Attività
 						<input class="bg-white focus:outline-none focus:shadow-outline border border-gray-500 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" required type="text" name="name" />
 					</label>
 				</p>
@@ -17,24 +17,26 @@ export default function Form() {
 								<option disabled="" value="">Seleziona una tipologia</option>
 								<option value="salute">👩‍⚕️ Salute</option>
 								<option value="artigianato">🎨Artigianato</option>
-								<option value="gelaterie">☕🍦Bar e Gelaterie</option>
+								<option value="bar_gelaterie">☕🍦Bar e Gelaterie</option>
 								<option value="macellerie">🥩Macelleria</option>
 								<option value="panifici">🍞Panifici</option>
 								<option value="pub">🍔Pub</option>
 								<option value="fiori_piante">🌻Fiori e Piante</option>
+								<option value="fotografia">📸Fotografia</option>
 								<option value="librerie">📚Librerie</option>
-								<option value="generi alimentari">🥬Generi Alimentari</option>
-								<option value="pesce fresco e surgelato">🍣Pesce Fresco/Surgelato</option>
+								<option value="generi_alimentari">🥬Generi Alimentari</option>
+								<option value="pesce_fresco_surgelato">🍣Pesce Fresco/Surgelato</option>
 								<option value="elettronica_elettrodomestici">📺Elettronica/Elettrodomestici</option>
 								<option value="ristorazione">🍽️Ristorazione</option>
-								<option value="enoteca e birre">🍾Enoteca e Birre</option>
-								<option value="frutta fresca">🍎Frutta Fresca</option>
+								<option value="telefonia">📱Telefonia</option>
+								<option value="enoteca_birre">🍾Enoteca e Birre</option>
+								<option value="frutta_fresca">🍎Frutta Fresca</option>
 								<option value="supermercati">🛒Supermercati</option>
 								<option value="pasticceria">🍩Pasticceria</option>
-								<option value="pizzerie">🍕Pizzeria</option>
+								<option value="pizzerie_rosticcerie">🍕Pizzeria/Rosticceria</option>
 								<option value="lavanderie">👔Lavanderia</option>
 								<option value="informatica">👨‍💻Informatica</option>
-								<option value="prodotti e servizi per animali">🐶Prodotti per Animali</option>
+								<option value="prodotti_per_animali">🐶Prodotti per Animali</option>
 							</select>
 						</label>
 				</p>
